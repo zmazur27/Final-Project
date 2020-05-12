@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This sentence will appear under the link in search engine results.">
+    <meta name="keywords" content="list,of,words,separated,by,commas,that,describe,your,site">
+    <meta name="author" content="Your name goes here">
+
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- shiv which should be a shim -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+    <!-- tab title -->
+    <title>U20 SHL | Register</title>
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles/main3.css">
+
+</head>
+
+
+<body>
+    <header class="clearfix">
+        <img src="images/logo2.png" alt="Mailing List logo">
+        <h1>Register for the League!</h1>
+        <h2>Don't miss out on a great opportunity!</h2>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="registration.html">Register</a></li>
+        </ul>
+    </nav>
+
+
+    <section>
+
+        <h2>League Sign Up!</h2>
+        <p>*We will contact you shortly after you sign up to discuss payment. Payment will either be Venmo or Check. Both are due by the start day.*</p>
+
+
+        <form name="user_data" action="signup.php" method="get">
+            <h3>Your information:</h3>
+            <fieldset>
+                <legend>Fill All Fields</legend>
+                <label class="clearfix" for="full_Name">Your Name:</label>
+                <input type="text" name="full_Name" id="full_Name" required>
+                <label class="clearfix" for="contactEmail">Your email address:</label>
+                <input type="email" name="contactEmail" id="contactEmail" required>
+                <label class="clearfix" for="age">Your Age:</label>
+                <input type="text" name="age" id="age" required>
+                <label class="clearfix" for="phone">Your phone number:</label>
+                <input type="tel" name="phone" id="phone">
+                <input type="submit" name="submit" value="SUBMIT">
+        </form>
+
+
+    </section>
+
+    <script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> U20 Summer Hockey League Productions</p>
+    </footer>
+
+</body>
+
+</html>

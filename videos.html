@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This sentence will appear under the link in search engine results.">
+    <meta name="keywords" content="list,of,words,separated,by,commas,that,describe,your,site">
+    <meta name="author" content="Your name goes here">
+
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- shiv which should be a shim -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+    <!-- tab title -->
+    <title>U20 SHL | Videos</title>
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles/main1.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+
+    <!-- slicknav -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- Link to jQuery Content Delivery Network - Necessary for SlickNav to work correctly -->
+    <script src="js/jquery.slicknav.min.js"></script>
+    <!-- Link to the slicknav file inside the js folder - Necessary for SlickNav to work correctly -->
+
+    <!-- slicknav javascript - this javascript code will use the UL inside the nav_menu tag to build the same menu in slickNav format -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.nav_menu').slicknav({
+                prependTo: "#mobilemenu"
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header class="clearfix">
+        <p>
+            TRAINING VIDEOS
+        </p>
+    </header>
+
+    <nav id="mobilemenu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="registration.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <nav class="bookmarks">
+        <ul>
+            <li><a href="#vid1">Video 1</a></li>
+            <li><a href="#vid2">Video 2</a></li>
+            <li><a href="#vid3">Video 3</a></li>
+            <li><a href="#vid4">Video 4</a></li>
+            <li><a href="#vid5">Video 5</a></li>
+        </ul>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Return To Top</button>
+    </nav>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+    <section>
+        <article id="vid1">
+            <h4>Video 1: Stick Handling Drills</h4>
+            <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/j1aHxpsm3AI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="caption">
+                <p>
+                    Here's a great stick handling video with many different stick handling drills you can easily do in the basement, garage or outside. Try and use a stick handling ball or a golf ball, those two will work better for the drills. Once you get these drills
+                    down, try challenging yourself to do them with your head up and on a swivel.
+                </p>
+            </div>
+        </article>
+
+        <article id="vid2">
+            <h4>Video 2: Drills to Improve your Snapshot</h4>
+            <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/12xPOQfxZRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="caption">
+                <p>
+                    These shooting drills will help you improve your shot for next season. They can be done off the ice and will help strengthen your forearms. Make sure when you are shooting your hands are off your body and you are in an athletic position so you won’t be
+                    knocked off the puck. You can also add in curl and drag shooting around an obstacle.
+                </p>
+            </div>
+        </article>
+        <article id="vid3">
+            <h4>Video 3: Great Speed Workouts</h4>
+            <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/_EKmSz_GZbA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="caption">
+                <p>
+                    This video has many great speed workouts. This will help with speed, agility and quickness on the ice. Really focus on sticking the landing before doing your next jump. You won't benefit from these workouts if you don't do them right. Once you are doing
+                    these workouts really well, pick up the speed and pace, push yourself, that is how you get better!
+                </p>
+            </div>
+        </article>
+        <article id="vid4">
+            <h4>Video 4: More Stickhandling with Footwork</h4>
+            <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/GQK1RBm8Vx4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="caption">
+                <p>
+                    These drills will help you to get your feet moving while stick handling. Just like when on the ice, the best players are able to move their feet while handling a puck and scanning the ice. Try this slow to get your rhythm down. Then you will be able to
+                    speed it up while scanning what’s in front of you.
+                </p>
+            </div>
+        </article>
+        <article id="vid5">
+            <h4>Video 5: Motivational Speech</h4>
+            <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/pH3QZvBfZeY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="caption">
+                <p>
+                    This man says it all...
+                </p>
+            </div>
+        </article>
+
+    </section>
+
+    <script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> U20 Summer Hockey League Productions</p>
+    </footer>
+
+</body>
+
+</html>

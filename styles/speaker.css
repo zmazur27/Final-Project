@@ -1,0 +1,171 @@
+/* the styles for the elements */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+
+section {
+    width: 525px;
+    float: right;
+    padding-bottom: 20px;
+}
+
+section h1 {
+    font-size: 150%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    margin: 0;
+    color: maroon;
+}
+
+article {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+article img {
+    float: right;
+    margin: 10px 10px;
+    border: 1px solid black;
+}
+
+article h2 {
+    padding-top: 0;
+    color: maroon;
+    font-size: 130%;
+}
+
+article h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+aside {
+    width: 215px;
+    float: right;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+header {
+    border-bottom: 3px solid #931420;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    background-image: linear-gradient( to bottom, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+header h2 {
+    font-size: 170%;
+    color: #800000;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    text-shadow: 2px 2px 8px #800000;
+}
+
+
+/* the styles for the header */
+
+header img {
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* the styles for the section */
+
+main {
+    clear: left;
+}
+
+section h2 {
+    font-size: 130%;
+    color: #800000;
+    padding-top: .5em;
+    padding-bottom: .25em;
+}
+
+aside h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+section ul {
+    padding-bottom: .25em;
+    padding-left: 1.25em;
+}
+
+section li {
+    padding-bottom: .35em;
+}
+
+p {
+    padding-bottom: .5em;
+}
+
+blockquote {
+    padding-left: 2em;
+    padding-right: 2em;
+    font-style: italic;
+}
+
+aside img {
+    padding-bottom: 1em;
+}
+
+aside a:link {
+    color: maroon;
+}
+
+
+/* visited link */
+
+aside a:visited {
+    color: maroon;
+}
+
+
+/* mouse over link */
+
+aside a:hover {
+    color: steelblue;
+    font-style: italic;
+}
+
+
+/* selected link */
+
+aside a:active {
+    color: steelblue;
+}
+
+
+/* the styles for the footer */
+
+footer {
+    clear: both;
+    font-variant: small-caps;
+    text-align: center;
+    color: white;
+    border-top: 3px solid #931420;
+    background-color: #931420;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}

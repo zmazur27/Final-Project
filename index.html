@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>U20 SHL | Home</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/printPage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#nav_menu').slicknav({
+                prependTo: "#mobile_menu"
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="images/homelogo.jpg" alt="SHL Logo" height="80">
+        <h2>U20 Summer Hockey League</h2>
+        <h3>Getting Better Every Year!</h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="registration.html">Register</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <section>
+            <h2>The Goal</h2>
+            <p>This league will be a league where players will have fun and no BS involved. As a player I always wanted to play in a league with my friends and teammates in the Summer, but I never wanted to drive to the South Shore. This is a perfect spot
+                to be able to bond with teammates prior to the season or even to be able to meet new players. Each team will be coached by a Professional hockey player and the plan is to be able to spread knowledge of the game and help them become better
+                players before they start their next season. Some players may be exposed to higher level players which will help push them to be better, and maybe even learn some cool new tricks.</p>
+
+
+            <h1>Player of the Week</h1>
+            <article>
+                <h2>N/A</h2>
+
+                <p>Each week we will update the home page with the name of the player of the week and their picture if they want us to post one. To determine who gets player of the week we will look at their stats from the week before. Once we determine
+                    the player, we will post him on this web page along with his goals, assists and some information about him.</p>
+            </article>
+
+            <h2>Announcements</h2>
+            <p>
+                There are no announcements at this time. We will be using this section of the web page regularly to post game times, game changes, or cancellations.
+            </p>
+        </section>
+
+        <aside>
+            <h2>NEWS</h2>
+            <p>
+                As the Summer is approaching, we are hoping that COVID-19 will disperse and we can have some fun playing hockey over the Summer!<br>
+            </p>
+            <p>
+                We hope everyone is staying safe! We will post youtube videos on our videos page of great at-home hockey skills training and workouts! Even though we're stuck at home, doesn't mean the grind stops!
+            </p>
+        </aside>
+    </main>
+    <script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> U20 Summer Hockey League Productions</p>
+    </footer>
+</body>
+
+</html>

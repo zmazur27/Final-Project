@@ -1,0 +1,464 @@
+/* the styles for the elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Clearfix */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    position: relative;
+    background-color: lightgray;
+    font-family: sans-serif;
+    font-size: 100%;
+    color: black;
+    max-width: 960px;
+    min-height: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+header {
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    background-image: linear-gradient( to bottom, lightgray 0%, lightgray 30%, white 50%, lightgray 80%, lightgray 100%);
+    border-bottom: 3px solid white;
+}
+
+header h1 a {
+    color: black;
+}
+
+header p {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    padding-top: 1em;
+    color: black;
+}
+
+header img {
+    padding: 0;
+    float: left;
+    max-width: 200px;
+    width: 100%;
+}
+
+header h1 {
+    float: left;
+    margin: .5em .75em;
+}
+
+header p {
+    color: black;
+}
+
+
+/* the styles for links */
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* the styles for the header */
+
+header h2 {
+    padding: 2em 0 .25em 0;
+}
+
+header h3 {
+    padding: .5em 0 .25em 0;
+}
+
+
+/* text shadow class */
+
+.shadow {
+    text-shadow: 2px 2px 2px red;
+}
+
+article {
+    width: 75%;
+    margin: 0 auto 2em;
+    padding: 2em 1em;
+    background-color: gray;
+    border-radius: 15px;
+}
+
+
+/* the styles for the navigation menu */
+
+#nav_menu {
+    clear: both;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 2em;
+    position: relative;
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 25%;
+}
+
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 120%;
+    background-color: gray;
+    color: white;
+}
+
+#nav_menu a:hover {
+    background-color: black;
+    color: white;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+#nav_menu ul ul li a {
+    text-align: left;
+    padding: .5em;
+}
+
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu ul li:hover>ul {
+    display: block;
+}
+
+#nav_menu>ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.bookmarks {
+    float: left;
+    width: 20%;
+    margin: 5em 2em 0 3em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+}
+
+.bookmarks ul {
+    list-style: none;
+    width: 95%;
+    margin: 2em 0 0;
+}
+
+.bookmarks ul li {
+    margin: 0 1em 3px 0;
+    transition: all .5s;
+}
+
+.bookmarks ul li a {
+    padding: .5em .5em;
+    display: block;
+    background-color: gray;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 0;
+    transition: all .5s;
+}
+
+.bookmarks ul li a:hover {
+    background-color: black;
+    color: gold;
+    border: 1px solid gold;
+}
+
+.bookmarks ul li:hover {
+    margin: 0 0 3px 1em;
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    width: 88%;
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: 1px solid black;
+    outline: none;
+    /* Remove outline */
+    background-color: gray;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    font-weight: bold;
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: .5em .5em;
+    margin: 0 1em 3px 0;
+    text-align: left;
+    transition: all .5s;
+    font-family: 'Nova Square', cursive;
+    font-size: 100%;
+    border-radius: 5px;
+}
+
+#myBtn:hover {
+    background-color: black;
+    color: gold;
+    margin: 0 0 3px 1em;
+    border: 1px solid gold;
+}
+
+#cornerBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    left: 5px;
+    bottom: 150px;
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: 1px solid black;
+    outline: none;
+    /* Remove outline */
+    font-weight: bold;
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: .5em .5em;
+    margin: 0 1em 3px 0;
+    font-family: 'Nova Square', cursive;
+    font-size: 100%;
+    border-radius: 5px;
+    background-color: darkred;
+    color: black;
+    transition: all .5s;
+}
+
+#cornerBtn:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: red;
+    border: 1px solid red;
+}
+
+
+/* the styles for the main content */
+
+main {
+    clear: left;
+}
+
+
+/* the styles for the section */
+
+section {
+    width: 70%;
+    float: right;
+    padding: 0 2.5% 20px 2.5%;
+}
+
+section p {
+    font: 110%;
+    line-height: 2;
+}
+
+article h4 {
+    margin-bottom: 1.5em;
+    font-size: larger;
+    color: black;
+}
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 0 auto;
+    border: 6px ridge gray;
+    box-shadow: 5px 5px 15px 10px white;
+}
+
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.caption p {
+    margin: 2em;
+    line-height: 1.5;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+/* the styles for the aside */
+
+aside {
+    width: 25%;
+    float: right;
+    background-color: lightyellow;
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px gray;
+    margin: 0 0 20px 1em;
+    padding: .75em;
+    font-weight: bold;
+}
+
+aside p {
+    padding-bottom: 1.5em;
+}
+
+#bottombuffer {
+    height: 100px;
+    padding-bottom: 100px;
+}
+
+
+/* the styles for the footer */
+
+footer {
+    background-color: black;
+    clear: both;
+    border-top: 3px solid gray;
+    /*	position: fixed;    */
+    /*	bottom: 0;			*/
+    max-width: 960px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+footer p {
+    text-align: center;
+    color: black;
+    border-top: 3px solid white;
+    background-image: linear-gradient( to bottom, lightgray 0%, lightgray 30%, white 50%, lightgray 80%, lightgray 100%);
+    font-size: 80%;
+    font-variant: small-caps;
+    padding: 2em 0;
+}
+
+
+/* hide the slicknav in large-screen view */
+
+.slicknav_menu {
+    display: none;
+}
+
+
+/* tablet portrait to standard 960 */
+
+@media only screen and (max-width: 959px) {
+    body,
+    aside {
+        box-shadow: none;
+        border-radius: 0;
+    }
+    footer {
+        border-radius: 0;
+    }
+}
+
+
+/* mobile landscape to tablet portrait */
+
+@media only screen and (max-width: 767px) {
+    header img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        padding: 1em 0;
+        max-width: 60%;
+    }
+    h1 {
+        font-size: 120%;
+        text-align: center;
+    }
+    header {
+        text-align: center;
+    }
+    header h2,
+    header h3 {
+        padding: 0 0 .25em;
+    }
+    section {
+        float: none;
+        width: 100%;
+        margin: 1em 0 2em;
+    }
+    /* hide the navigation menu */
+    #nav_menu {
+        display: none;
+    }
+    /* and replace it with the slicknav menu */
+    .slicknav_menu {
+        display: block;
+        background-color: red !important;
+    }
+    .slicknav_menu ul li a {
+        color: black !important;
+        font-size: 120% !important;
+    }
+    body,
+    main {
+        width: 100%;
+        font-size: 85%;
+    }
+    .bookmarks {
+        display: none;
+    }
+    article,
+    div {
+        width: 100%;
+        margin: 0 0 2em;
+        padding: 2em 0;
+        border-radius: 0;
+    }
+    .videowrapper {
+        border: 0;
+        box-shadow: none;
+        width: 100%;
+    }
+}
+
+
+/* mobile portrait to mobile landscape */
+
+@media only screen and (max-width: 479px) {
+    body {
+        font-size: 90%;
+    }
+}

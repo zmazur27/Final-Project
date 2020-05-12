@@ -1,0 +1,294 @@
+/* the styles for the elements */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    max-width: 960px;
+    width: 98%;
+    margin: 0 auto;
+    border: 3px solid white;
+    background-color: lightgray;
+}
+
+section {
+    width: 75%;
+    float: right;
+    padding-bottom: 20px;
+}
+
+section h1 {
+    font-size: 150%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    margin: 0;
+}
+
+article {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+article img {
+    float: right;
+    margin: 10px 10px;
+    border: 1px solid black;
+}
+
+article h2 {
+    padding-top: 0;
+}
+
+article h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+aside {
+    width: 22.395%;
+    float: right;
+    padding-left: 2.083%;
+    padding-bottom: 20px;
+}
+
+header {
+    border-bottom: 3px solid white;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    background-image: linear-gradient( to bottom, lightgray 0%, lightgray 30%, white 50%, lightgray 80%, lightgray 100%);
+}
+
+header p {
+    text-align: center;
+    font-size: xx-large;
+}
+
+header h2 {
+    font-size: 170%;
+    color: black;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+}
+
+
+/* the styles for the header */
+
+header img {
+    max-width: 40%;
+    min-width: 150px;
+    float: left;
+    padding-left: 3.125%;
+    padding-right: 3.125%;
+}
+
+
+/* the styles for the section */
+
+#nav_menu ul {
+    list-style: none;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 25%;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu ul li.lastitem a {}
+
+#nav_menu ul li a.current {
+    color: black;
+}
+
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+    background-color: black;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu ul li:hover>ul {
+    display: block;
+}
+
+#nav_menu>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main {
+    clear: left;
+}
+
+section h2 {
+    font-size: 130%;
+    color: black;
+    padding-top: .5em;
+    padding-bottom: .25em;
+}
+
+aside h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+section ul {
+    padding-bottom: .25em;
+    padding-left: 1.25em;
+}
+
+section li {
+    padding-bottom: .35em;
+    list-style: circle;
+}
+
+p {
+    padding-bottom: .5em;
+}
+
+blockquote {
+    padding-left: 2em;
+    padding-right: 2em;
+    font-style: italic;
+}
+
+aside img {
+    padding-bottom: 1em;
+}
+
+aside a:link {
+    color: black;
+}
+
+
+/* visited link */
+
+aside a:visited {
+    color: black;
+}
+
+
+/* mouse over link */
+
+aside a:hover {
+    color: steelblue;
+    font-style: italic;
+}
+
+
+/* selected link */
+
+aside a:active {
+    color: steelblue;
+}
+
+
+/* the styles for the footer */
+
+footer {
+    clear: both;
+    font-variant: small-caps;
+    text-align: center;
+    color: black;
+    border-top: 3px solid white;
+    background-image: linear-gradient( to bottom, lightgray 0%, lightgray 30%, white 50%, lightgray 80%, lightgray 100%);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 959px) {
+    section h1 {
+        font-size: 135%;
+    }
+    section h2 {
+        font-size: 120%;
+    }
+    aside h2 {
+        font-size: 120%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header img {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+    header h2,
+    header h3 {
+        text-indent: 0%;
+        text-align: center;
+    }
+    section {
+        float: none;
+        width: 95.834%;
+    }
+    aside {
+        float: none;
+        padding-right: 2.083%;
+        width: 95.834%;
+    }
+    article img {
+        max-width: 30%;
+    }
+    .columns {
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    aside,
+    section {
+        font-size: 90%;
+    }
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: #800000 !important;
+    }
+}

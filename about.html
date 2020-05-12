@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>U20 SHL | About</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/printPage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#nav_menu').slicknav({
+                prependTo: "#mobile_menu"
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <p>About the League</p>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="registration.html">Register</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <section>
+            <p>
+                U20 SHL is a Summer Hockey League based out of The Edge Sports Center in Bedford, MA. We are planning on having 6 teams in the league with all games on Tuesday nights. Each team will have maximum of 15 players. We will be starting June 16th, 2020 and
+                having the last games on August 25th, 2020. All teams will make the playoffs. Those will start on August 11th, 2020 with 1st seed vs 6th seed, 2nd seed vs 5th seed, and the 3rd seed vs 4th seed. The winner of the championship will receive
+                a T-shirt along with having bragging rights. The cost of the league is $300 per individual. If you have a team already picked, the cost for the team is $3,650. This price includes game jerseys, ice time, professional coaches on the bench
+                and pro/college refs so the games are good games and can be very competitive and fun.
+            </p>
+            <p>
+                If you are an individual signing up for the league, you will be put on a team based off your age and skill. We will try to make the teams as even as possible. The oldest a player can be is 20, and the youngest a player can be to register is 15.
+            </p>
+            <p>
+                We will play by NHL rules with hybrid icing. There will be 3, 15 minute periods running time. Once the clock hits the 2 minute mark, the time will stop on each whistle. If the game ends in a tie, it will then proceed to a 3-man shootout. Winner of the
+                shootout will get 1 point.
+            </p>
+            <p>
+                Standings Tie Breaker will be:<br> 1. Head to Head<br> 2. Goal Differential<br> 3. Least Penalty Minutes<br> 4. Least Goals Against<br> 5. Coin Flip<br>
+            </p>
+            <p>
+                This should be a good league to show off and practice your skills, dont be selfish, pass the puck, have fun, meet new people, and become a better player!
+            </p>
+        </section>
+
+        <aside>
+            <h2>NEWS</h2>
+            <p>
+                As the Summer is approaching, we are hoping that COVID-19 will disperse and we can have some fun playing hockey over the Summer!<br>
+            </p>
+            <p>
+                We hope everyone is staying safe! We will post youtube videos on our videos page of great at-home hockey skills training and workouts! Even though we're stuck at home, doesn't mean the grind stops!
+            </p>
+        </aside>
+    </main>
+    <script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> U20 Summer Hockey League Productions</p>
+    </footer>
+</body>
+
+</html>
